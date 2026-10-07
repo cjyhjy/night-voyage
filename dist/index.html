@@ -1,16 +1,202 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101411"><title>二十 · 夜航长卷</title><meta name="description" content="舟行至此，恰逢二十。一卷从月夜驶向天明的生日祝福。"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23101411'/%3E%3Ccircle cx='21' cy='10' r='5' fill='%23F2E9D3'/%3E%3Cpath d='M5 23Q16 30 27 23M6 22H26' fill='none' stroke='%23B89A60'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"></head><body class="waiting">
-<div class="landscape" aria-hidden="true"></div><div class="atmosphere" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
-<header class="masthead"><a href="#voyage" aria-label="回到启舟">二十<span>夜航长卷</span></a><span class="edition">A LETTER TO YOUR TWENTIES</span><button id="sound" aria-pressed="false" aria-label="开启水声">水声 · 关</button></header>
-<div class="entrance" id="entrance"><p class="eyebrow">献给今天的你</p><h1>请为今天的她，<br>留一点点时间。</h1><button id="enter">入卷<span class="line"></span></button><p class="entrance-note">一叶小舟，一轮月，一封未写完的信。</p></div>
-<main id="main" inert><section id="voyage" class="hero act"><div class="hero-text"><p class="eyebrow">第一幕 / 启舟</p><h2 class="twenty"><span>二</span><span>十</span></h2><p class="hero-sub">舟行至此，恰逢二十。</p><p class="small">写给今天的你</p></div><div class="wake" aria-hidden="true"></div><img class="boat" src="boat.png" alt="金线勾勒的一叶水墨小舟"><a class="scroll-cue" href="#her">向下 · 继续此卷<span></span></a><div class="hero-foot"><span>十九的夜 / 二十的晨</span><span>月色为序，山水作笺</span></div></section>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1530">
+<title>二十 · 夜航长卷</title>
+<meta name="description" content="从十九岁的夜晚，驶向二十岁的清晨。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1d33'/%3E%3Ccircle cx='21' cy='10' r='4.5' fill='%23F2E9D3'/%3E%3Cpath d='M6 21q10 5 20 0' fill='none' stroke='%23C9A96A' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/img/scene-night.webp" as="image">
+<link rel="preload" href="assets/fonts/serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/brush.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="is-waiting">
 
-<section id="her" class="act her"><div class="reveal her-heading"><p class="eyebrow">第二幕 / 她</p><h2>关于你，<br>我好像总有很多话想说。</h2><p class="aside">有些光，不需要很亮。<br>只要出现，就能照见一整个夜晚。</p></div><div class="qualities reveal"><span>温柔</span><span>认真</span><span>偶尔倔强</span><span>明亮</span><span>细腻</span><span>偶尔发呆</span><span>可爱</span></div><p class="her-ending reveal">这些细碎的模样，<br>拼成了现在的你。</p></section>
-<section id="twenty" class="act age"><div class="age-number" aria-hidden="true">20</div><div class="reveal age-copy"><p class="eyebrow">第三幕 / 二十</p><h2>不是长大的终点。<br>是自由的开篇。</h2><p>十九岁的风，送你到这里。<br>二十岁的月光，会陪你去更远的地方。</p><span class="seal">二十<br>新章</span></div></section>
-<section id="notes" class="act notes"><div class="section-head reveal"><p class="eyebrow">第四幕 / 二十笺</p><h2>把想说的话，<br>折成二十笺。</h2><p>每一笺，都是一份小小的偏爱。<span class="instruction">轻触展开</span></p></div><div id="notes-list" class="notes-list reveal"></div><p class="notes-foot reveal">山水有尽，喜欢无穷。</p></section>
-<section id="wishes" class="act wishes"><div class="section-head reveal"><p class="eyebrow">第五幕 / 愿</p><h2>今夜的月亮，<br>替你收下所有愿望。</h2><p>点亮一份祝愿，让它随舟远行。</p></div><div class="wish-list reveal"><button class="wish" aria-pressed="false"><span>壹</span><strong>愿你自在</strong><small>不必成为别人期待的模样。</small></button><button class="wish" aria-pressed="false"><span>贰</span><strong>愿你勇敢</strong><small>想去的远方，都有出发的勇气。</small></button><button class="wish" aria-pressed="false"><span>叁</span><strong>愿你被爱</strong><small>有人懂你的言外之意，也懂你的沉默。</small></button><button class="wish" aria-pressed="false"><span>肆</span><strong>愿你快乐</strong><small>平凡的日子里，仍有小小的惊喜。</small></button></div><p class="wish-status" aria-live="polite">四份心愿，等一阵温柔的风。</p></section>
-<section id="meeting" class="act meeting"><div class="meeting-line" aria-hidden="true"></div><div class="reveal"><p class="eyebrow">第六幕 / 相逢</p><p class="meeting-pre">世界很大，山水很长。</p><h2>而你刚好，<br>来到我的故事里。</h2><p class="aside">不必给相逢一个盛大的理由。<br>只是从此，月亮更好看了一点。<br>连普通的日子，也值得被记住。</p><p class="meeting-last">幸好，是你。</p></div></section>
-<section id="letter" class="act letter"><div class="letter-wrap reveal"><p class="eyebrow">第七幕 / 给你</p><h2>有些话，<br>想慢慢写给你。</h2><details class="letter-envelope"><summary><span>给二十岁的你</span><span class="letter-action">启信</span></summary><div class="letter-paper"><p class="salutation">亲爱的你：</p><p>写到这里，月亮还在，舟也还在往前走。我想，二十岁大概也像这样：有一点未知，有一点期待，还有许多尚未发生的美好。</p><p>愿你不用急着懂得所有事情，不用为了长大，藏起自己的天真。可以认真，也可以偶尔偷懒；可以坚定，也可以暂时迷路。你有很多很多时间，慢慢成为喜欢的自己。</p><p>愿你走过的路有花，回头的时候有灯。愿每一次勇敢都得到回应，每一份温柔都有人珍惜。就算偶尔遇见雨，也记得：你值得晴天，值得拥抱，值得所有不需要证明的偏爱。</p><p>今天，先把世界放在一边。好好许愿，好好快乐，好好收下这句：</p><p class="birthday">二十岁，生日快乐。</p><p>往后的山水很长。<br>我想，继续陪你看。</p><p class="signature">一个很喜欢你的人<br><span>写于你二十岁的这一页</span></p></div></details></div></section>
-<section id="dawn" class="act dawn"><div class="reveal dawn-copy"><p class="eyebrow">终幕 / 天明</p><h2>舟行未止，<br>故事未完。</h2><p class="english">Happy 20th Birthday.</p><p class="to-be">To be continued.</p><img class="dawn-boat" src="boat.png" alt="小舟继续驶向天明"><button id="replay">再看一遍<span></span></button></div><p class="dawn-foot">愿你的二十岁，有月光，也有晨光。</p></section>
-<section class="secret" aria-label="藏在长卷末尾的一句话"><p>你怎么还在往下翻……</p><p>真的很喜欢你。</p><span>这句话，只留给看到这里的你。</span></section>
-</main><nav class="chapter-nav" aria-label="长卷章节"></nav><dialog id="note-dialog"><button class="close-note" aria-label="合上信笺">×</button><p class="eyebrow" id="note-number"></p><h2 id="note-title"></h2><p id="note-body"></p><span class="note-sign">写给二十岁的你</span></dialog><script src="script.js"></script></body></html>
+<!-- ========== 背景世界（固定层）：山水、月亮、雾、晨光 ========== -->
+<div id="world" aria-hidden="true">
+  <div class="scene">
+    <div class="scene-img night"></div>
+    <div class="scene-img blue"></div>
+    <div class="scene-img dawn"></div>
+    <div class="moon-halo"></div>
+    <div class="moon"></div>
+    <div class="sun"></div>
+  </div>
+  <div class="dawn-haze"></div>
+  <div class="fog fog-far"></div>
+  <div class="fog fog-near"></div>
+  <div class="world-shade"></div>
+</div>
+
+<!-- 开卷时的“未渲染”墨色层，小舟划过的地方会被晕开 -->
+<canvas id="reveal" aria-hidden="true"></canvas>
+<!-- 金色水纹 / 墨晕 / 粒子 -->
+<canvas id="fx" aria-hidden="true"></canvas>
+<!-- 开卷的小舟 -->
+<div id="voyager" aria-hidden="true"></div>
+
+<!-- ========== 入卷 ========== -->
+<div id="entrance">
+  <div class="entrance-inner">
+    <h1 class="entrance-lines"></h1>
+    <button id="enter" type="button"><span class="enter-text"></span><i class="enter-line"></i></button>
+  </div>
+  <p class="entrance-note"></p>
+</div>
+
+<header class="masthead">
+  <span class="mark">二十</span><span class="mark-sub">夜航长卷</span>
+</header>
+<button id="sound" type="button" aria-pressed="false" aria-label="声音">
+  <span class="note-glyph">♪</span><i class="mute-slash"></i>
+</button>
+<div class="progress" aria-hidden="true"><i></i></div>
+<div class="act-tag" aria-hidden="true"></div>
+
+<main id="main">
+  <!-- 启舟 -->
+  <section id="voyage" class="chapter hero" data-act="启舟">
+    <div class="hero-title">
+      <svg class="twenty-svg" viewBox="20 20 2020 880" role="img" aria-label="二十"></svg>
+    </div>
+    <p class="hero-sub"></p>
+    <p class="hero-small"></p>
+    <a class="scroll-cue" href="#her"><span></span><i></i></a>
+  </section>
+
+  <!-- 她 -->
+  <section id="her" class="chapter scrolly" data-act="她">
+    <div class="stage">
+      <div class="her-intro"></div>
+      <div class="her-words"></div>
+      <div class="her-gather"></div>
+      <div class="her-final"></div>
+    </div>
+  </section>
+
+  <!-- 二十 -->
+  <section id="twenty" class="chapter scrolly" data-act="二十">
+    <div class="stage">
+      <svg class="window20" aria-hidden="true"></svg>
+      <div class="twenty-lines"></div>
+    </div>
+  </section>
+
+  <!-- 二十笺 -->
+  <section id="notes" class="chapter" data-act="二十笺">
+    <header class="notes-head">
+      <h2 class="brush-title"></h2>
+      <p class="notes-sub"></p>
+      <p class="notes-count"></p>
+    </header>
+    <div class="notes-field"></div>
+  </section>
+
+  <!-- 愿 -->
+  <section id="wishes" class="chapter" data-act="愿">
+    <h2 class="brush-title wish-title"></h2>
+    <div class="wish-lines"></div>
+    <div class="wish-final"><p></p></div>
+    <div class="lanterns">
+      <div class="lantern-head"><p class="lantern-intro"></p><p class="lantern-sub"></p></div>
+      <div class="lantern-row"></div>
+      <p class="lantern-status" aria-live="polite"></p>
+      <div class="lantern-done"></div>
+    </div>
+  </section>
+
+  <!-- 相逢 -->
+  <section id="meeting" class="chapter scrolly" data-act="相逢">
+    <div class="stage">
+      <svg class="routes" aria-hidden="true"></svg>
+      <div class="meeting-lines"></div>
+      <p class="meeting-days"></p>
+    </div>
+  </section>
+
+  <!-- 给你 -->
+  <section id="letter" class="chapter" data-act="给你">
+    <button class="envelope" type="button">
+      <span class="env-paper">
+        <span class="env-title"></span>
+        <span class="env-sub"></span>
+        <span class="env-seal"><i></i></span>
+      </span>
+      <span class="env-hint"></span>
+    </button>
+  </section>
+
+  <!-- 天明 -->
+  <section id="dawn" class="chapter scrolly" data-act="天明">
+    <div class="stage">
+      <div class="dawn-lines"></div>
+      <h2 class="dawn-title"></h2>
+      <p class="dawn-en"></p>
+      <p class="dawn-tbc"></p>
+      <button class="replay" type="button"><span></span><i></i></button>
+    </div>
+  </section>
+
+  <div class="after-space" aria-hidden="true"></div>
+  <section id="secret" aria-label="">
+    <div class="stage">
+      <svg class="ink-drop" viewBox="-60 -60 120 120" aria-hidden="true"></svg>
+      <div class="secret-lines"></div>
+      <p class="secret-final"></p>
+      <svg class="gold-flower" viewBox="-50 -50 100 100" aria-hidden="true"></svg>
+    </div>
+  </section>
+</main>
+
+<!-- 拆开的纸笺 -->
+<div id="jian-modal" hidden>
+  <div class="jian-backdrop"></div>
+  <article class="jian-open" role="dialog" aria-modal="true" aria-labelledby="jian-open-title">
+    <p class="jian-open-no"></p>
+    <h3 id="jian-open-title" class="jian-open-key"></h3>
+    <p class="jian-open-text"></p>
+    <p class="jian-open-sign"></p>
+    <div class="jian-open-nav">
+      <button type="button" class="jian-prev">上一笺</button>
+      <button type="button" class="jian-close">收起</button>
+      <button type="button" class="jian-next">下一笺</button>
+    </div>
+  </article>
+</div>
+
+<!-- 信 -->
+<div id="letter-sheet" hidden>
+  <div class="sheet-scroll">
+    <article class="sheet">
+      <p class="sheet-greeting"></p>
+      <div class="sheet-body"></div>
+      <div class="sheet-closing"></div>
+      <p class="sheet-sign"></p>
+      <button type="button" class="sheet-close"><span></span><i></i></button>
+    </article>
+  </div>
+</div>
+
+<script src="content.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/MotionPathPlugin.min.js"></script>
+<script src="js/glyphs.js"></script>
+<script src="js/util.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/world.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/boat.js"></script>
+<script src="js/opening.js"></script>
+<script src="js/her.js"></script>
+<script src="js/twenty.js"></script>
+<script src="js/notes.js"></script>
+<script src="js/wishes.js"></script>
+<script src="js/meeting.js"></script>
+<script src="js/letter.js"></script>
+<script src="js/dawn.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
