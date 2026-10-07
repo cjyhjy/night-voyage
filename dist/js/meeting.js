@@ -54,7 +54,7 @@
     const P = paths(W, H);
     [[pA, gA, P.A], [pB, gB, P.B], [pT, gT, P.T]].forEach(([p, g, d]) => { p.setAttribute('d', d); g.setAttribute('d', d); });
     lenA = pA.getTotalLength(); lenB = pB.getTotalLength(); lenT = pT.getTotalLength();
-    L = clamp(Math.min(W, H) * 0.15, 70, 140);
+    L = clamp(Math.min(W, H) * 0.17, 80, 160);
     [boatA, boatB].forEach((b) => { b.style.width = L * 1.5 + 'px'; b.style.height = L * 0.48 + 'px'; });
     render();
   }

@@ -99,10 +99,16 @@ h1, h2, h3, p { margin: 0; font-weight: 400; }
 #voyager { position: fixed; inset: 0; z-index: 6; pointer-events: none; opacity: 0; }
 #voyager .boat { position: absolute; left: 0; top: 0; transform-origin: 58.33% 50%; will-change: transform; }
 .boat { overflow: visible; }
-.boat .oar { transform-origin: -92px 7px; animation: scull 1.6s ease-in-out infinite; }
-.boat .lantern-glow { animation: flicker 2.6s ease-in-out infinite; transform-origin: 78px 0; }
-@keyframes scull { 50% { transform: rotate(-11deg); } }
-@keyframes flicker { 40% { opacity: .8; transform: scale(.94); } 70% { opacity: 1; transform: scale(1.04); } }
+.boat-img { display: block; }
+.boat-img > * { position: absolute; display: block; pointer-events: none; user-select: none; -webkit-user-drag: none; }
+.boat-img .boat-shadow { left: 20%; top: 30%; width: 76%; height: 56%; border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, .45), rgba(0, 0, 0, 0) 68%); }
+.boat-img .oar { animation: scull 1.8s ease-in-out infinite; }
+.boat-img .boat-lamp { width: 26%; aspect-ratio: 1; transform: translate(-50%, -50%); border-radius: 50%; mix-blend-mode: screen;
+  background: radial-gradient(circle, rgba(255, 236, 190, .75) 0%, rgba(255, 205, 130, .3) 18%, rgba(255, 190, 120, 0) 60%);
+  animation: flicker 2.6s ease-in-out infinite; }
+@keyframes scull { 0%, 100% { transform: rotate(4deg); } 50% { transform: rotate(-10deg); } }
+@keyframes flicker { 40% { opacity: .78; transform: translate(-50%, -50%) scale(.94); } 70% { opacity: 1; transform: translate(-50%, -50%) scale(1.05); } }
 
 /* ---------------- 入卷 ---------------- */
 #entrance {

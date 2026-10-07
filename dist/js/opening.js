@@ -123,7 +123,7 @@
     holder.innerHTML = '';
     const boat = NV.boat.create({ canopy: true, lantern: true });
     holder.appendChild(boat);
-    const L = clamp(Math.min(W, H) * 0.2, 110, 190); // 船身长度(px)
+    const L = clamp(Math.min(W, H) * 0.24, 120, 220); // 船身长度(px)
     const bw = L * 1.5, bh = bw * 0.32;
     Object.assign(boat.style, { width: bw + 'px', height: bh + 'px' });
     const P = route();
