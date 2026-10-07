@@ -41,7 +41,12 @@ python3 tools/subset_fonts.py
 
 ## 部署
 
-整个 `dist/` 文件夹就是网站，可以放到任何静态托管上（原来的 `.openai/hosting.json` 也是指向 `dist`）。
+整个 `dist/` 文件夹就是网站，可以放到任何静态托管上。
+
+- **GitHub Pages**：推送到 `main` 后，`.github/workflows/pages.yml` 会自动把 `dist/` 发布到 https://cjyhjy.github.io/night-voyage/ （一两分钟生效）。
+- **Codex 托管**：`.openai/hosting.json` 指向 `dist`，在 Codex 里重新发布即可。
+
+注意：网页上的所有文字（包括信）拿到链接的人都能看到；仓库是公开的，`content.js` 也能在 GitHub 上直接看到。
 
 ## 结构
 
